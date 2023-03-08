@@ -58,40 +58,43 @@
         </form>
 </fieldset>
 
-    <fieldset>
+    <fieldset> <!--Comentário-->
         <legend>Dados profissionais</legend><br>
         <form>
-            <label for="NaturezaDoCargo">NaturezaDoCargo</label><br>
-            <input type="radio" id="Gerência" value="1">
-            <label for="Gerência">Gerência</label>
-            <input type="radio" id="Financeiro" value="2">
-            <label for="Financeiro">Financeiro</label>
-            <input type="radio" id="Recepcao" value="3">
-            <label for="Recepcao">Recepção</label>
-            <input type="radio" id="Administrativo" value="4">
-            <label for="Administrativo">Administrativo</label>
-            <input type="radio" id="Juridico" value="5">
-            <label for="Juridico">Jurídico</label><br><br>
 
-            <label for="Área de interesse">Área de interesse</label><br>
-            <input type="checkbox" id="Computacao" value="6">
-            <label for="Computacao">Computação</label>
-            <input type="checkbox" id="Quimica" value="7">
-            <label for="Quimica">Química</label>
-            <input type="checkbox" id="MeioAmbiente" value="8">
-            <label for="MeioAmbiente">Meio Ambiente</label>
-            <input type="checkbox" id="Engenharia" value="9">
-            <label for="Engenharia">Engenharia</label>
-            <input type="checkbox" id="Matematica" value="10">
-            <label for="Matematica">Matemática</label><br><br>
+            <br><label>Natureza do cargo</label> <br>
+
+            <input type="radio" name="natureza_do_cargo" value="gerencia"/> Gerência
+            <input type="radio" name="natureza_do_cargo" value="financeiro"/> Financeiro
+            <input type="radio" name="natureza_do_cargo" value="recepcao"/> Recepção
+            <input type="radio" name="natureza_do_cargo" value="administrativo"/> Administrativo
+            <input type="radio" name="natureza_do_cargo" value="juridico"/> Jurídico
+
+            <br><br><br><label>Área de interesse</label><br>
+
+            <input type="checkbox" name="natureza_do_cargo2" value="comput"/>Computação
+            <input type="checkbox" name="natureza_do_cargo2" value="quimica"/>Química
+            <input type="checkbox" name="natureza_do_cargo2" value="meio_ambiente"/>Meio ambiente
+            <input type="checkbox" name="natureza_do_cargo2" value="engenharia"/>Engenharia
+            <input type="checkbox" name="natureza_do_cargo2" value="mat"/>Matemática
 
             <label for="MiniCurriculo">Mini Currículo:</label><br>
             <textarea name="message" style="width: 600px; height: 200px;"></textarea><br>
 
-
-
         </form>
-    </fieldset>
+    </fieldset><br>
+
+          <input type="submit" name="enviar" value="Enviar">
 
 </body>
+
+        <style>
+            fieldset {
+                width: 700px;
+                
+            }
+            
+        </style>
+
+
 </html>
